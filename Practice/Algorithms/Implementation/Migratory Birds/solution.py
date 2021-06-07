@@ -12,8 +12,10 @@ def migratoryBirds(arr):
     s = set(arr)
     if arr == s: return min(arr)
     else:
-        li = [(arr.count(i), i) for i in s if arr.count(i) > 1]
-        res = min([i[1] for i in li if i[0]==max(y[0] for y in li)])
+        counts = {}
+        for name in arr:
+            counts[name] = counts.get(name, 0) + 1
+        res = min([k for k,v in counts.items() if v == max(counts.values())])
         return res
 
 if __name__ == '__main__':
