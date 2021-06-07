@@ -1,4 +1,4 @@
-#!/bin/python3
+#https://www.hackerrank.com/challenges/migratory-birds/problem?h_r=next-challenge&h_v=zen
 
 import math
 import os
@@ -6,12 +6,7 @@ import random
 import re
 import sys
 
-#
-# Complete the 'migratoryBirds' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts INTEGER_ARRAY arr as parameter.
-#
+
 
 def migratoryBirds(arr):
     s = set(arr)
